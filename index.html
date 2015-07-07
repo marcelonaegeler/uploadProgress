@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=320">
+	<style>
+	body {
+		font: Arial, sans-serif;
+		width: 100%;
+	}
+	.progress {
+		width: 100%;
+		position: relative;
+		height: 30px;
+	}
+	.progressBg {
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 100%;
+		background-color: #ccc;
+		transition: width 0.1s linear;
+	}
+	.progressText {
+		display: block;
+		position: absolute;
+  		top: 5px;
+  		z-index: 2;
+		width: 100%;
+		color:#333;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.msg {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<input type="file" name="upload" multiple>
+	<p class="progress">
+		<span class="progressText"></span>
+		<span class="progressBg"></span>
+	</p>
+	<p class="msg"></p>
+	<script src="script.js"></script>
+</body>
+</html>
